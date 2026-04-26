@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB Handcrafted</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: #222;
+            color: white;
+            padding: 1rem 5%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* HERO */
+        .hero {
+            height: 70vh;
+            background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content button {
+            padding: 10px 20px;
+            border: none;
+            background: #f39c12;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* PRODUK */
+        .produk {
+            padding: 3rem 5%;
+        }
+
+        .produk h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .produk-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: green;
+            font-weight: bold;
+        }
+
+        .card button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background: #222;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* RESPONSIVE */
+
+        /* TABLET */
+        @media (max-width: 768px) {
+            .produk-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .produk-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                height: 50vh;
+            }
+
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+            <div class="logo">CB Handcrafted</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Produk</a>
+                <a href="#">Kategori</a>
+                <a href="#">Keranjang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Selamat Datang di Toko Online</h1>
+                <p>Belanja mudah, cepat, dan terpercaya</p>
+                <button>Belanja Sekarang</button>
+            </div>
+        </section>
+
+        <!-- PRODUK -->
+        <section class="produk">
+            <h2>Produk Unggulan</h2>
+
+            <div class="produk-grid">
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Produk 1">
+                    <h3>Tas Vintage</h3>
+                    <p>Rp 90.000</p>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Produk 2">
+                    <h3>Celana Anak</h3>
+                    <p>Rp 75.000</p>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Produk 3">
+                    <h3>Jaket Anak</h3>
+                    <p>Rp 120.000</p>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/200" alt="Produk 4">
+                    <h3>Sepatu Anak</h3>
+                    <p>Rp 150.000</p>
+                    <button>Tambah ke Keranjang</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Kontak: email@toko.com | 08123456789</p>
+        <p>&copy; 2026 CB Handcrafted</p>
+    </footer>
+
+</body>
+</html>
